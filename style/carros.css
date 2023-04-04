@@ -1,0 +1,289 @@
+/*Geral config start*/
+
+/* Personalização da barra de rolagem */
+::-webkit-scrollbar {
+  width: 0px;
+  background-color: #d9ff00;
+}
+/* Personalização do polegar da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  width: auto;
+  background-color: #888888;
+}
+
+body a,
+h2,
+div,
+h1 {
+  text-decoration: none;
+  color: inherit;
+  margin: 0px;
+}
+body {
+  font-size: 16px;
+  margin: 0px;
+  background-color: #bbbbbb;
+}
+.all {
+  display: grid;
+  margin: auto;
+  width: 95%;
+}
+/*header start*/
+
+.topbox {
+  display: grid;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  background-image: url("/img/topbar/top1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.topboxstyle {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.topboxstyle2 {
+  background-color: rgba(0, 23, 58, 0.5);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#logo {
+  align-self: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.list {
+  align-self: center;
+  justify-self: end;
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+}
+/* register and login buttons*/
+#logreg {
+  grid-column: 2;
+  font-size: 1rem;
+  padding: 5px 10px;
+  margin: 10px;
+  background-color: rgb(14, 0, 82);
+  border-radius: 4px;
+  color: goldenrod;
+}
+/*main nav base*/
+.mainnavbuttons {
+  display: flex;
+  place-content: center;
+  gap: 10px;
+}
+/*main nav buttons*/
+.mnbuttons {
+  color: goldenrod;
+  border-radius: 4px;
+  padding: 5 10px;
+  font-size: 1rem;
+  text-align: center;
+  background-color: rgb(14, 0, 82);
+}
+
+/*header end*/
+
+/* normal container start*/
+.container {
+  font-size: 0.7rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  gap: 10px;
+}
+
+.section {
+  grid-template-rows: auto auto 1fr;
+  display: grid;
+}
+
+.item {
+  display: grid;
+
+  max-width: 100%;
+  grid-template-columns: 1fr auto;
+  grid-row: 1;
+  padding: 10px;
+  gap: 5px;
+
+  border: 1px solid rgb(0, 7, 48);
+  color: goldenrod;
+  background-color: rgb(14, 0, 82);
+
+  text-align: center;
+
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.descrip {
+  place-self: start;
+}
+.tag1 {
+  color: rgb(14, 0, 82);
+  background-color: gray;
+  padding: 4px;
+  border-radius: 4px;
+
+  place-self: center;
+}
+
+.img1 {
+  grid-row: 2;
+}
+.img1 img {
+  max-width: 100%;
+}
+
+.cont {
+  grid-row: 3 / 5;
+
+  color: rgb(11, 0, 65);
+  background-color: rgb(206, 206, 206);
+
+  text-align: center;
+  padding: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+/* normal container end*/
+
+/*normal footer start*/
+
+.footer {
+  font-size: 0.7rem;
+  display: grid;
+  max-width: 100%;
+
+  gap: 10px;
+  padding: 10px;
+  grid-template-columns: repeat(3, 1fr);
+
+  border-radius: 4px;
+  background-color: rgb(0, 7, 41);
+}
+
+.bot {
+  max-width: 100%;
+
+  padding: 10px;
+
+  align-self: center;
+  text-align: center;
+
+  color: white;
+}
+
+/*Normal footer end*/
+
+/*Media Start 700px*/
+
+@media (max-width: 700px) {
+  body {
+    background-color: rgb(165, 165, 165);
+  }
+  .all {
+    width: 100%;
+    padding: 2px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: auto;
+    box-sizing: border-box;
+  }
+  .header {
+    margin: 2px;
+    grid-template-rows: 150px repeat(6, 50px);
+    grid-column: 1;
+    background-image: url("/img/topbar/top2.png");
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+    font-size: 0.5rem;
+  }
+  .topbuttons {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    padding: 2px;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .logotype {
+    place-self: start;
+    grid-row: 1;
+    grid-column: 1 /-1;
+  }
+  .logotype img {
+    max-width: 100%;
+  }
+  /*head end*/
+
+  /*container start*/
+
+  .container {
+    box-sizing: border-box;
+    margin: 0px;
+    gap: 5px;
+    max-width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding-left: 5px;
+    padding-top: 0px;
+    font-size: 1rem;
+  }
+
+  .section {
+    justify-self: auto;
+    background-color: rgba(0, 68, 255, 0);
+  }
+
+  .cont {
+    justify-self: auto;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+
+  .item {
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+
+    justify-self: auto;
+  }
+
+  /*container end*/
+
+  /*footer start*/
+
+  .footer {
+    box-sizing: border-box;
+    align-self: center;
+    background-color: rgb(0, 7, 41);
+    grid-column: 1/-1;
+    font-size: 0.7rem;
+  }
+  .bot {
+    align-self: center;
+    text-align: center;
+
+    color: white;
+  }
+}
+
+/*footer end*/
