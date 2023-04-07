@@ -39,7 +39,7 @@ body {
   grid-row: 1 /2;
   border-radius: 0.6rem;
   padding: 0.6rem;
-  background-image: url("/img/topbar/top1.png");
+  background-image: url("img/topbar/top1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -151,7 +151,7 @@ body {
 
 .mainscript {
   grid-row: 2/3;
-  background-color: red;
+  background-color: white;
 }
 
 .container {
